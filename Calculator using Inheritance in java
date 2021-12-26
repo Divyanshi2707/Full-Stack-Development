@@ -1,0 +1,110 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+class Calc
+{
+	 static int a,b;
+     static Scanner calc = new Scanner(System.in);
+     
+     static void input1()
+     {
+             System.out.println("Enter a no:");
+              a = calc.nextInt();
+             System.out.println("Enter another no:");
+             b = calc.nextInt();
+     }       
+     
+     static int add(int a,int b)
+     {
+             return a+b;
+     }
+     
+     static int sub(int a,int b)
+     {
+             return a-b;
+     }
+     
+     static int mul(int a,int b)
+     {
+             return a*b;
+     }
+     
+    static double div(int a,int b)
+     {
+             return a/b;
+     }
+}
+
+class SubCalc extends Calc {
+	 static int c;
+
+	    static void input2() {
+		    System.out.print("Enter a number: ");
+		    c = calc.nextInt();
+	    }
+	
+	    static int sqr(int c) {
+		    return c * c;
+	    }
+	
+	    static int cube(int c) {
+		    return c * c * c;
+	    }
+}
+
+public class SubCalc2 extends SubCalc{
+	 
+	 static double areaOfCircle(int c) {
+			return Math.PI * c * c;
+		}
+		
+		static int areaOfRectangle(int a, int b) {
+			return a * b;
+		}
+		
+		 public static void main(String args [])
+	     {
+	             System.out.println("----Menu----");
+	             System.out.println("1.Add \n2.Sub \n3.Mul \n4.Div \n5.Sqr \n6.Cube \n7.Area of Circle \n8.Area of Rectangle");
+	             int m = calc.nextInt();
+	             switch(m) {
+	             case 1:
+	            	 input1();
+	                 System.out.println(a+"+"+b+"="+add(a,b));
+	                 break;
+	             case 2:
+	            	 input1();
+	            	 System.out.println(a+"-"+b+"="+sub(a,b));
+	            	 break;
+	             case 3:
+	    	         input1();
+	    	         System.out.println(a+"*"+b+"="+mul(a,b));
+	    	         break;
+	             case 4:
+	    	         input1();
+	    	         System.out.println(a+"/"+b+"="+div(a,b));
+	    	         break;
+	             case 5:
+	    	         input2();
+	    	         System.out.println("Square of "+c+" ="+sqr(c));
+	    	         break;
+	             case 6:
+	    	         input2();
+	    	         System.out.println("Cube of "+c+" ="+cube(c));
+	    	         break;
+	             case 7:
+	    	         input2();
+	    	         System.out.println("Area of circle of radius "+c+" ="+areaOfCircle(c));
+	    	         break;
+	             case 8:
+	    	         input1();
+	    	         System.out.println("Area of rectangle of width "+a+" and height "+b+" ="+areaOfRectangle(a,b));
+	    	         break;
+	             default:
+	                 System.out.println("Wrong Entry");
+	                 break;
+	     }
+	   
+	     }
+
+}
