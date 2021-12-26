@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Reverse {
+	public static void main(String args[]) {
+		int rev=0, rem, num;
+		Scanner revObj = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		num = revObj.nextInt();
+		if (num<10 && num>-10) {
+			System.out.println("Reverse of "+num+ " is " +num);
+		}
+		else {
+			while(num != 0) {
+			    rem = num%10;
+				rev = rev*10+rem;
+				num = num/10;
+		}
+			System.out.println("Reverse of the given number is " +rev);
+		}
+	}
+}
