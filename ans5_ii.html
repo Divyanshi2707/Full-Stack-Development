@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer3_secondSolution</title>
+</head>
+<body>
+    <p>maximum value from a number array</p>
+    <span id="third"></span>
+</body>
+<script>
+    const numbers_Array = [136, 45, 67, 179, 23, 55];
+
+document.getElementById("third").innerHTML = numbers_Array.reduce(maxFunc);
+
+function maxFunc(total, num) {
+  return total - num;
+}
+</script>
+</html>

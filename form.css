@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    height: 110vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, magenta, blueviolet, crimson, teal, olive);
+}
+.container {
+    max-width: 400px;
+    width: 100vw;
+    background: linear-gradient( to right, dodgerblue, pink);
+    padding: 25px 30px;
+    border-radius: 10px;
+    color: #eee;
+}
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: center;
+}
+.container form {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+form .user-details .input-box {
+    margin: 5px 0 5px 0;
+}
+.user-details .input-box input {
+    height: 25px;
+    width: 230px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+}
+.user-details .input-box .details {
+    display: block;
+    margin-bottom: -12px;
+}
+.user-details .button input[type=submit] {
+    height: 25px;
+    width: 230px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    color: #010857;
+}
+     
+
+ /*
+ 
+ body {
+    background:linear-gradient(to left, azure, thistle, plum);
+}
+ .container {
+    background: rgb(243, 230, 40);    
+ }
+ .container { 
+     padding-top: 20px;
+    background: rgb(243, 230, 40); 
+ }
+
+.form {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.input, input[type=submit] {
+    width: 18em;
+}
+
+ */
+
+ 

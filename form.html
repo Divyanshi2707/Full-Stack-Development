@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">New User Registration</div>
+            <form action="#" target="_blank" method="get">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Username</span><br>
+                        <input type="text" id="userName" placeholder="Enter Username" pattern="^\S+$" title="Must not have space" required><br><br>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span><br>
+                        <input type="email" id="eMail" placeholder="Enter Email" required><br><br>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span><br>
+                        <input type="password" id="password" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span><br>
+                        <input type="password" id="passwordAgain" placeholder="Enter Password Again" pattern="matchpassword()" required><br><br>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="SUBMIT" ><br>
+                    </div>
+                </div>
+            </form>
+        </div>
+</body>
+<script>
+    function matchPassword() {  
+        var pw1 = document.getElementById("password");  
+        var pw2 = document.getElementById("passwordAgain");  
+           if(pw1 != pw2)  
+           {   
+               alert("Password did not match!")
+           } else {  
+             alert("Password created successfully");  
+              }  
+     }  
+</script>
+</html>
+

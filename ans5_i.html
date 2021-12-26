@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer3_firstSolution</title>
+</head>
+<body>
+    <p>maximum value from a number array with its index</p>
+    <span id="first"></span>
+</body>
+<script>
+
+ const testArray = [136, 45, 67, 179, 23, 55];
+    let max = testArray[0];
+for (let i = 1; i < testArray.length; ++i) {
+  if (testArray[i] > max) {
+    max = testArray[i];
+  }
+}
+document.getElementById("first").innerHTML = max;
+
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>const arr = [2, -1, 8, 1, -9, 3, -7, 5]</p>
+  <p>positive numbers in the above array:  <span id="first"></span><br></p>
+  <p>square of all the positive Numbers:  <span id="second"></span><br></p>
+</body>
+<script>
+    const arr = [2, -1, 8, 1, -9, 3, -7, 5];
+    let positive_no = [];
+    for(let i = 0; i < arr.length; i++){
+      if(arr[i] > 0){
+        positive_no.push(arr[i]);
+      }
+    }
+     document.getElementById("first").innerHTML = positive_no;
+
+     let square_no = [];
+    for (let j = 0; j < positive_no.length; j++){
+        square_no.push(positive_no[j] ** 2);
+    }
+     document.getElementById("second").innerHTML = square_no;
+
+</script>
+</html>
