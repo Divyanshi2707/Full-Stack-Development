@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment-decrement</title>
+    <style>
+        body {
+            background:radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
+            background-repeat: no-repeat;
+        }
+        h1 {
+            color:rgb(102, 102, 99);
+        }
+        button {
+            margin-left:49%;
+            background-color: green;
+            width:25px;
+            height:25px;
+        }
+        button:hover {
+            background-color:springgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Increment and Decrement counter</h1>
+    <div="container">
+        <button onclick="increment()">+</button>
+        <h2  align="center" id="counting"></h2>
+        <button onclick="decrement()">-</button>
+    </div>
+</body>
+<script>
+    var counter=0;
+    document.getElementById("counting").innerText=counter;
+    function increment() {
+        counter++;
+        document.getElementById("counting").innerText=counter;
+    }
+    function decrement() {
+        counter--;
+        document.getElementById("counting").innerText=counter;
+    }
+</script> 
+</html>

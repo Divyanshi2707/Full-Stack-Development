@@ -1,0 +1,85 @@
+<!DOCTYPE html>-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        body {
+            padding: 10px;
+            background:linear-gradient(to bottom left, snow 50%, palegoldenrod 50%);
+        }
+        h1 {
+            color:teal;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        button {
+            margin-left: 50%;
+        }
+        p {
+            padding:10px;
+        }
+        
+        .btn1 {
+            color:tomato;
+            border-color: tomato;
+        }
+        .btn2 {
+            color:plum;
+            border-color: plum;
+        }
+        .btn3 {
+
+            color:seagreen;
+            border-color: seagreen;
+        }
+        .btn4 {
+            color:slateblue;
+            border-color:slateblue;
+        }
+        .btn5 {
+            color:sienna;
+            border-color: sienna;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Color changing buttons</h1>
+    <button type="button" class="btn1" onclick="tomato()">Tomato</button>
+    <p id="para1">Click on the button above to change the color of this paragraph to the color mentioned in the same. Tomato has the hex code #FF6347. The equivalent RGB values are (255, 99, 71), which means it is composed of 60% red, 23% green, and 17% blue. The CMYK color codes useed in printer are C:0 M:61 Y:72 K:0. In the HSV/HSB scale, Tomato has a hue of 9deg, 72% saturation and a brightness value of 100%.</p>
+
+    <button type="button" class="btn2" onclick="plum()">Plum</button>
+    <p id="para2">Click on the button above to change the color of this paragraph to the color mentioned in the same. Plum is a puple color with a brownish-gray tinge, like that shown on the right, or a reddish purple, which is a close representation of the average color of the average color of the plum fruit. As a quaternary color on the RYB color wheel, plum is an equal mix of the tertiary colors russet and slate.</p>
+
+    <button type="button"  class="btn3" onclick="seaGreen()">Sea Green</button>
+    <p id="para3">Click on the button above to change the color of this paragraph to the color mentioned in the same. Sea green is a type of green color that is inspired by ocean conditions that cause the sea to  appear green from distance. Pure water typically appears blue from a distance because random particles are likely to absorb long wavelengths of light such as red and scatter shorter blue wavelengths.</p>
+
+    <button type="button" class="btn4" onclick="slateBlue()">Slate Blue</button>
+    <p id="para4">Click on the button above to change the color of this paragraph to the color mentioned in the same. slate blue, like all of the other slate colors, has a slight tone of gray to it. This color is often called blue-gray, or can also been known to be called "livid". Slate blue is named sfter the attributes of the metamorphic rock named slate.</p>
+
+    <button type="button" class="btn5" onclick="sienna()">Sienna</button>
+    <p id="para5">Click on the button above to change the color of this paragraph to the color mentioned in the same. Sienna is an earth pigment containing iron oxide and manganese oxide. In its natural state, it is yellowish brown and is called raw sienna. when heated, it becomes a reddish brown and is called burnt sienna. It takes its name from the city of Siena, where it was produced during the Renaissance.</p>
+</body>
+<script>
+    function tomato() {
+        document.getElementById("para1").style.color="tomato";
+    }
+
+    function plum() {
+        document.getElementById('para2').style.color="plum";
+    }
+
+    function seaGreen() {
+        document.getElementById('para3').style.color="seagreen";
+    }
+
+    function slateBlue() {
+        document.getElementById('para4').style.color="slateblue";
+    }
+
+    function sienna() {
+        document.getElementById('para5').style.color="sienna";
+    }
+</script>
+</html>
