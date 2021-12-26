@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.math.BigInteger;
+
+public class Big_Integer {
+	
+	static int num;
+	static Scanner factorial = new  Scanner(System.in); 
+	
+	static void input() {
+		System.out.print("Enter a number: ");
+		num = factorial.nextInt();
+	}
+	
+	public static BigInteger fact(int num) {
+		BigInteger fact = BigInteger.ONE;
+		
+		for(int initial=num; initial>0; initial--) {
+			fact = fact.multiply(BigInteger.valueOf(initial));
+		}
+		
+		return fact;
+	}
+	
+	public static void main(String args[]) {
+		input();
+		System.out.println("Factorial of a number is: "+fact(num));
+	}
+}
