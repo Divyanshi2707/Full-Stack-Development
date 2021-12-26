@@ -26,7 +26,8 @@
                     </div>
                     <div class="input-box">
                         <span class="details">Confirm Password</span><br>
-                        <input type="password" id="passwordAgain" placeholder="Enter Password Again" pattern="matchpassword()" required><br><br>
+                        <input type="password" id="passwordAgain" placeholder="Enter Password Again" required><br><br>
+                        <span class="error" id="pwderror"></span>
                     </div>
                     <div class="button">
                         <input type="submit" value="SUBMIT" ><br>
@@ -40,11 +41,12 @@
         var pw1 = document.getElementById("password");  
         var pw2 = document.getElementById("passwordAgain");  
            if(pw1 != pw2)  
-           {   
-               alert("Password did not match!")
-           } else {  
-             alert("Password created successfully");  
-              }  
+            {   
+            document.getElementById("pwderror").innerText="Password Not Matching" 
+           }
+           else {
+            alert("Succefully Completed!")
+          }
      }  
 </script>
 </html>
