@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        .container {
+             display: flex;
+             background:linear-gradient(to left, royalblue, palevioletred, sienna, seagreen);
+             box-sizing: content-box;
+        }   
+        .container > div {
+             background-color: cornsilk;
+             width: 90vw; 
+             margin: 10px;
+             text-align: center;
+             line-height: 25px;
+             font-size: 10px;
+        }   
+        @media screen and (max-width: 500px) {
+              .container {
+                display: inline-block;
+                background: linear-gradient(to right, aquamarine, plum, silver, peru, lightgray);
+              }
+            }    
+        @media screen and (max-width: 500px) {
+              .container > div {
+                width: 90vw;
+              }
+            }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Create a webpage which has three rectangular color blocks.</div>
+        <div>While viewing the page in a laptop viewport, those colour blocks should be adjacent to each other.</div>
+        <div>While viewing the page in a mobile viewport, those colour blocks should be displayed vertically one below other.</div>
+    </div>
+</body>
+</html>
