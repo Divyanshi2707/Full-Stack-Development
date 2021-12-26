@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Natural_Numbers {
+	public static void main(String args[]) {
+		int num, sum=0;
+		Scanner natural = new  Scanner(System.in); 
+		System.out.print("Enter a number: ");
+		num = natural.nextInt();
+		
+		for(int initial=1; initial<=num; initial++) {
+			sum = sum+initial;
+		}
+		System.out.println("Sum of number from 1 to "+num+ " is: "+sum);
+	}
+}
