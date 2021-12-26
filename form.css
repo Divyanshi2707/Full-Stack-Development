@@ -52,4 +52,8 @@ form .user-details .input-box {
     border: 1px solid #eee;
     color: #010857;
 }
+.error {
+    color: crimson;
+    font-size: smaller;
+}
      
