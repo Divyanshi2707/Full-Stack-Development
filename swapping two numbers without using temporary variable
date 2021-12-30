@@ -1,0 +1,19 @@
+package assignment3;
+import java.util.Scanner;
+
+public class Swap2Numbers {
+	public static void main(String args[]) {
+		int num1, num2;
+		Scanner swap = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		num1 = swap.nextInt();
+		System.out.print("Enter another number: ");
+		num2 = swap.nextInt();
+		
+		num1 = num1+num2;
+		num2 = num1-num2;
+		num1 = num1-num2;
+		
+		System.out.print("After Swapping: " + "num1 = " + num1 + ", num2 = " + num2);
+	}
+}
